@@ -1,0 +1,254 @@
+/* Estilos CSS personalizados aquí */
+body {
+    background-image: linear-gradient(90deg, rgb(33, 33, 35), rgb(56, 62, 65)); 
+    display: grid;
+    place-items: center;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    color: #fff;
+}
+
+/*Header*/
+
+header {
+    
+    position: sticky;
+    background-image: linear-gradient(90deg, rgb(28, 28, 40), rgb(60, 73, 80)); 
+    color: #fff;
+    width: 100%;
+    display: flex;
+    align-items: end;
+
+}
+
+h1 {
+    font-size: 36px;  
+}
+
+h3{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+p {
+    font-size: 18px;
+}
+
+a img{
+    
+    max-width: 40px;
+    max-height: 40px;
+    
+}
+
+.redesSociales{
+    display: flex;
+    justify-content: end;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 2%;
+    padding-left: 15%;
+    flex-wrap: wrap;
+}
+
+.imgWhats{
+    max-width: 40px;
+    max-height: 40px;
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
+.WhatsApp{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.imgGmail{
+    max-width: 40px;
+    max-height: 40px;
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
+.gmail{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+
+button{
+    background-image: linear-gradient(
+        150deg,
+        rgb(60, 73, 80),
+        rgb(57, 78, 100),
+        rgb(33, 33, 35)
+    );
+    border: 0;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.5s;
+    
+}
+button img{
+    background: none;
+    padding: 4px 2px;
+    border-radius: 6px;
+    transition: 0.5s;
+}
+
+button:hover img{
+    transform: scale(1.2);
+}
+
+
+
+button:active{
+    transform: scale(0.5);
+}
+
+.image{
+    max-width: 200px;
+    max-height: 200px;
+    place-items: left;
+    border-radius: 5%;
+    border-color: rgb(64, 64, 90);
+    padding: 1%;
+    
+}
+
+.containerHeader{
+    display: flex;
+    justify-content: left;
+    align-items: end;
+    width: 100%;
+    margin: 0.5%;
+}
+
+.linea {
+    border: 1px solid #575656; /* Estilo del borde */
+    margin: 20px 0; /* Espacio en la parte superior e inferior de la línea */
+    border-radius: 1%;
+}
+
+
+/*---------------------------------------------------------------*/
+
+.contenido {
+    max-width: 1150px;
+    padding: 50px;
+}
+
+.infoPuesto p{
+    padding-left: 30px;
+}
+
+.infoHabTec p{
+    padding-left: 30px;
+}
+
+.ContenidoHabTec{
+    display: flex;
+
+}
+
+.lenguajes{
+    width: 100%;
+    border-right: none;
+    display: grid;
+    justify-content: center;
+}
+
+.niveles{
+
+    width: 100%;
+    display: grid;
+    align-items: center;
+    
+}
+
+.nivelesJava{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    border-left: none;
+}
+.nivelesKotlin{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    border-left: none;
+}
+
+.nivelesPython{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    border-left: none;
+}
+
+.nivelesSQL{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    border-left: none;
+}
+
+.nivelInterJava{
+    border: solid rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.nivelBajoKotlin{
+    border: solid rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.nivelInterPython{
+    border: solid rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.nivelInterSQL{
+    border: solid rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.proyectos{
+    
+    padding-left: 30px;
+}
+
+.proyecto1 p{
+    padding-left: 30px;
+}
+
+.proyecto2 p{
+    padding-left: 30px;
+}
+
+.proyecto3 p{
+    padding-left: 30px;
+}
+
+.mensajeFinal {
+    padding: 30px;
+}
