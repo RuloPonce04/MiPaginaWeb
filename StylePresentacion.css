@@ -10,7 +10,7 @@ body {
     display: grid;
     place-items: center;
     justify-content: center;
-    align-items: c;
+    align-items: center;
     min-height: 100vh;
     font-family: Arial, sans-serif;
     color: #fff;
