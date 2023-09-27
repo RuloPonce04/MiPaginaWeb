@@ -25,7 +25,3 @@ function cerrarToggleDetails(projectNumber) {
     detailsElement.style.display="none"
 
 }
-
-function cerrar(){
-    document.getElementById("det").style.display="none"
-}
