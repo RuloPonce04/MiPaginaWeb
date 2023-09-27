@@ -11,3 +11,21 @@ window.addEventListener('scroll', ()=>{
     }
 
 })
+
+function toggleDetails(projectNumber) {
+    var detailsElement = document.getElementById("det" + projectNumber);
+    if (detailsElement.style.display === "block") {
+        detailsElement.style.display = "none";
+    } else {
+        detailsElement.style.display = "block";
+    }
+}
+function cerrarToggleDetails(projectNumber) {
+    var detailsElement = document.getElementById("det" + projectNumber);
+    detailsElement.style.display="none"
+
+}
+
+function cerrar(){
+    document.getElementById("det").style.display="none"
+}

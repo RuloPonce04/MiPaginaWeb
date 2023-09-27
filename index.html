@@ -30,11 +30,11 @@
                     <img src="Imgs/menu.png" class="menu-icono" alt="">
                 </label>
                     <ul class="menu">
-                        <li class="item">Inicio</li>
-                        <li class="item">Conocimientos</li>
-                        <li class="item">Experiencia</li>
-                        <li class="item">Mensaje</li>
-                        <li class="item">Contacto</li>
+                        <li class="item-header">Inicio</li>
+                        <li class="item-header">Conocimientos</li>
+                        <li class="item-header">Experiencia</li>
+                        <li class="item-header">Mensaje</li>
+                        <li class="item-header">Contacto</li>
                     </ul>
             </div>
         </div>
@@ -171,36 +171,79 @@
             <h1>Experiencia y proyectos</h1>
             <br>
             <div class="proyectos">
+
                 <div class="proyecto1">
                     <h2>CRUD en Android Studio</h2>
-                    <p>
-                        El sistema consiste en una aplicación desarrollada en kotlin por medio de Android Studio  que interactúa con la base de datos 
-                        a través del servidor GlassFish de Java, enviando los datos en forma de consultas tipo Gson.
-                        <br>
-                        De esta manera, se lleva a cabo el CRUD (Crear, Leer, Actualizar y Borrar) en la base de datos desde la 
-                        aplicación Android.
-                        <br>
-                        <br>
-                        El programa esta disponible en mi GitHub.
-                    </p>
-                    
+                    <div class="detalles" id="det1">
+                        <div id="cerrar">
+                            <a href="javascript:cerrarToggleDetails(1)"><img src="Imgs/cancelar.png"></a>
+                        </div>
+                        <figure>
+                            <div class="img-proyectos">
+                                <img src="Imgs/ImgCursoAndroid.png" alt="">
+                            </div>
+                            <p>
+                                El sistema consiste en una aplicación desarrollada en kotlin por medio de Android Studio  que interactúa con la base de datos 
+                                a través del servidor GlassFish de Java, enviando los datos en forma de consultas tipo Gson.
+                                <br>
+                                De esta manera, se lleva a cabo el CRUD (Crear, Leer, Actualizar y Borrar) en la base de datos desde la 
+                                aplicación Android.
+                                <br>
+                                <br>
+                                El programa esta disponible en mi GitHub.
+                            </p>
+                        </figure>
+                    </div>
+                    <div class="item">
+                        <figure class="descripcion">
+                            <a href="javascript:toggleDetails(1)"><button><img src="Imgs/ImgCursoAndroid.png" alt=""></button></a>
+                        </figure>
+                        <div class="info-proyecto">
+                            <section id="contenedor">
+                                <button type="button" onclick="toggleDetails(1)">ver Detalles</button>
+                            </section>
+                        </div>
+                    </div>
                 </div>
-                <br>
+                
                 <div class="proyecto2">
-                    <h2>Sistema de Camaras de Vision</h2>
-                    <p>
-                        El sistema se compone de una aplicación desarrollada íntegramente en Python. Su función principal 
-                        consiste en utilizar una cámara para capturar una imagen y luego compararla con otra imagen previamente 
-                        tomada. Este proceso implica la comparación píxel a píxel, generando un porcentaje de similitud como 
-                        resultado. La aplicación incluye una interfaz gráfica de usuario que ofrece funciones como inicio de sesión, 
-                        múltiples puntos de control y la capacidad de seleccionar el color de la pieza con la que se realizará la 
-                        comparación.
-                        <br>
-                        <br>
-                        Las imágenes relacionadas con el proyecto se pueden encontrar en mi perfil de Instagram, cuyo enlace se 
-                        encuentra en la parte superior de esta página, identificado con el símbolo de Instagram.
-                    </p>
+                    <h2>Sistema de Cámaras de Visión</h2>
+                    <div class="detalles" id="det2">
+                        <div id="cerrar">
+                            <a href="javascript:cerrarToggleDetails(2)"><img src="Imgs/cancelar.png"></a>
+                        </div>
+                        <figure >
+                            <div class="img-proyectos">
+                            <img src="Imgs/ImgLoginCV.png" alt="">  
+                            </div>
+                        <p>
+                            El sistema se compone de una aplicación desarrollada íntegramente en Python. Su función principal 
+                            consiste en utilizar una cámara para capturar una imagen y luego compararla con otra imagen previamente 
+                            tomada. Este proceso implica la comparación píxel a píxel, generando un porcentaje de similitud como 
+                            resultado. La aplicación incluye una interfaz gráfica de usuario que ofrece funciones como inicio de sesión, 
+                            múltiples puntos de control y la capacidad de seleccionar el color de la pieza con la que se realizará la 
+                            comparación.
+                            <br>
+                            <br>
+                            Las imágenes relacionadas con el proyecto se pueden encontrar en mi perfil de Instagram, cuyo enlace se 
+                            encuentra en la parte superior de esta página, identificado con el símbolo de Instagram.
+                        </p>
+                        </figure>
+                    </div>
+
+                    <div class="item">
+                        <figure class="descripcion">
+                            <a href="javascript:toggleDetails(2)"><button><img src="Imgs/ImgLoginCV.png" alt=""></button></a>
+                        </figure>
+                        <div class="info-proyecto">
+                            <section id="contenedor">
+                                <button type="button" onclick="toggleDetails(2)">ver Detalles</button>
+                            </section>
+                        </div>
+                    </div>
                 </div>
+                
+<!-- ****************************************************************************************************************************** -->
                 <br>
                 <br>
                 <div class="proyecto3">

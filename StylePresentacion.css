@@ -24,25 +24,14 @@ header {
     background-image: linear-gradient(90deg, rgb(28, 28, 40), rgb(60, 73, 80)); 
     color: #fff;
     width: 100%;
+
     display: flex;
     top: 0;
     padding-top: 10px;
-    
+    box-shadow: 10px 4px 5px #000;
     margin: 0 10px;
     justify-content: space-between;
-}
-
-.espacio-header{
-    
-    width: 100%;
-    padding-bottom: 150px;
-
-}
-
-.containerHeader{
-    
-    display: flex;
-
+    z-index: 998; /* Ajusta el z-index a un valor alto para que esté por encima de otros elementos */
 }
 
 .datosHeader{
@@ -71,7 +60,7 @@ header {
     justify-content: center;
 }
 
-.item{
+.item-header{
     
     margin: 0 15px;
     font-size: 18px;
@@ -80,7 +69,7 @@ header {
     color: #f2f2f2;
 }
 
-.item:hover{
+.item-header:hover{
     color: #707276;
 }
 
@@ -122,7 +111,7 @@ label{
         display: none;
     }
 
-    .item{
+    .item-header{
         margin: 0 0 20px 0;
         width: 100%;
     }
@@ -130,7 +119,27 @@ label{
     #menu:checked ~ .menu{
         display: initial;
     }
+    .detalles {
+        
+        background-image: linear-gradient(90deg, rgb(39, 71, 120), rgb(3, 57, 116));
+        width: 65%;
+        color: rgba(255, 255, 255, 1);
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 10px;
+        display: none;
+        z-index: 999; /* Ajusta el z-index a un valor alto para que esté por encima de otros elementos */
+    }
+    
+    .detalles p{
+        
+        width: 100%;
+        min-width: 100%;
+        font-size: 10px;
+    }
 
+    figure img{
+        width: 80%;
+    }
 }
 @media (max-width:400px){
 
@@ -138,6 +147,33 @@ label{
         width: 100%;
         padding-bottom: 200px;
     }
+
+    .detalles {
+        
+        background-image: linear-gradient(90deg, rgb(39, 71, 120), rgb(3, 57, 116));
+        min-width: 80%;
+        color: rgba(255, 255, 255, 1);
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        display: none;
+        z-index: 999; /* Ajusta el z-index a un valor alto para que esté por encima de otros elementos */
+    }
+    
+    .detalles p{
+        
+        width: 100%;
+        min-width: 100%;
+        font-size: 10px;
+    }
+
+    figure img{
+        width: 80%;
+    }
+    .img-proyectos img{
+        min-width: 250px;
+        min-height: 400px;
+    }
+
 }
 
 
@@ -261,6 +297,7 @@ nav a:hover{
     nav{
         padding: 10px 0px;
     }
+
 }
 
 .linea {
@@ -369,17 +406,20 @@ nav a:hover{
 }
 
 .proyectos{
+    padding-left: 30px;
+}
+
+.proyecto1{
+    display: grid;
     
-    padding-left: 30px;
 }
 
-.proyecto1 p{
-    padding-left: 30px;
+.proyecto2{
+    display: grid;
+
+
 }
 
-.proyecto2 p{
-    padding-left: 30px;
-}
 
 .proyecto3 p{
     padding-left: 30px;
@@ -388,3 +428,93 @@ nav a:hover{
 .mensajeFinal {
     padding: 30px   ;
 }
+
+.item img {
+    max-width: 100%;
+    max-height: 210px; /* Establece la altura máxima deseada */
+    min-height: 210px;
+    min-width: 100%;
+    width: auto;
+    height: auto;
+    display: block; /* Añadido para centrar verticalmente las imágenes */
+    margin: 0 auto; /* Añadido para centrar horizontalmente las imágenes */
+}
+
+.item figure {
+    overflow: hidden;
+
+}
+
+.item:hover img {
+    transform: scale(1.1);
+
+}
+
+.info-proyecto{
+    padding: 15px 30px;
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.info-proyecto button {
+    color: rgb(255, 255, 255);
+    padding: 15px 10px;
+    cursor: pointer;
+    border-radius: 10%;
+    
+}
+
+.detalles {
+    background-image: linear-gradient(90deg, rgb(39, 71, 120), rgb(3, 57, 116));
+    width: 75%;
+    color: rgba(255, 255, 255, 1);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    z-index: 999; /* Ajusta el z-index a un valor alto para que esté por encima de otros elementos */
+    
+}
+
+.detalles p{
+    
+    text-align: justify;
+}
+
+
+#cerrar img{
+    width: 10%;
+    height: 10%;
+}
+
+figure img{
+    width: 60%;
+
+}
+figure{
+    display: grid;
+    justify-content: center;
+    
+}
+
+.item {
+    
+    display: grid;
+    justify-content: center;
+    width: 100%;
+}
+
+.img-proyectos img{
+    max-width: 750px;
+    max-height: 350px;
+}
+
