@@ -1,32 +1,44 @@
+//Cmbiar el color del encabezado cuando bajamos con el scroll
+
+/* 
 var header = document.getElementById('Header');
 
-window.addEventListener('scroll', ()=>{
+window.addEventListener('scroll', () => {
+    var scroll = window.scrollY;
 
-    var scroll = window.scrollY
-
-    if(scroll>10){
-        header.style.backgroundColor='#121212'
-    }else{
-        header.style.backgroundColor='black'
+    // Si el desplazamiento es mayor a 10, cambia el color de fondo a '#121212', de lo contrario, a 'black'
+    if (scroll > 10) {
+        header.style.backgroundColor = '#121212';
+    } else {
+        header.style.backgroundColor = 'black';
     }
+}); */
 
-})
+//---------------------------------------------------------------------------------------
 
+// Mostrar y ocultar detalles de proyectos
 function toggleDetails(projectNumber) {
     var detailsElement = document.getElementById("det" + projectNumber);
-    detailsElement.style.display = "none"
+
+    // Si los detalles están visibles, los oculta; de lo contrario, los muestra
     if (detailsElement.style.display === "block") {
         detailsElement.style.display = "none";
     } else {
         detailsElement.style.display = "block";
     }
 }
+
+//---------------------------------------------------------------------------------------
+
+// Ocultar detalles de proyectos
 function cerrarToggleDetails(projectNumber) {
     var detailsElement = document.getElementById("det" + projectNumber);
-    detailsElement.style.display="none"
-
+    detailsElement.style.display = "none";
 }
 
+//---------------------------------------------------------------------------------------
+
+// Desplazamiento suave al hacer clic en enlaces del menú
 document.addEventListener("DOMContentLoaded", function() {
     // Selecciona todos los enlaces del menú
     var menuLinks = document.querySelectorAll(".menu a");
@@ -65,9 +77,3 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
-
-
-
-
-
-
